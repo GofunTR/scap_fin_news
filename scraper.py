@@ -22,8 +22,10 @@
 # All that matters is that your final data is written to an SQLite database
 # called "data.sqlite" in the current working directory which has at least a table
 # called "data".
-import scraperwiki
+
+import os
 os.environ['SCRAPERWIKI_DATABASE_NAME'] = 'sqlite:///data.sqlite'
+import scraperwiki
 import requests
 from bs4 import BeautifulSoup
 from datetime import datetime
