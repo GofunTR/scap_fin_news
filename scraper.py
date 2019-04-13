@@ -23,6 +23,7 @@
 # called "data.sqlite" in the current working directory which has at least a table
 # called "data".
 import scraperwiki
+os.environ['SCRAPERWIKI_DATABASE_NAME'] = 'sqlite:///data.sqlite'
 import requests
 from bs4 import BeautifulSoup
 from datetime import datetime
